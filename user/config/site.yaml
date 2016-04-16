@@ -1,0 +1,16 @@
+title: 'Nicolas Bages'
+author:
+  name: 'Nicolas Bages'
+  email: spyesx@gmail.com
+taxonomies:
+  - category
+  - tag
+metadata:
+  description: 'homo-numerictus since 1986'
+summary:
+  enabled: true
+  format: short
+  size: 300
+  delimiter: '==='
+blog:
+  route: /blog
