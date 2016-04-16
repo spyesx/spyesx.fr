@@ -17,4 +17,4 @@ This is a simple git repo for spyesx.fr
 
 ## Grav
 
-The original README of Grav is in [doc/Grav_README.md](doc/Grav_README.md)
+The original README of Grav is in [doc/Grav_README.md](doc/grav/README.md)
