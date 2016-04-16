@@ -16,7 +16,7 @@ home:
   alias: /about
   hide_in_urls: false
 pages:
-  theme: endlessiterations
+  theme: material
   order:
     by: default
     dir: asc
