@@ -6,7 +6,7 @@ This is a simple git repo for spyesx.fr
 
 * [Grav CMS](https://getgrav.org)
 * [Material theme](https://github.com/spyesx/grav-theme-material)
-* Hosting managed by [Elysiria](http://www.elysiria.fr/)
+* Hosting supervised by [Elysiria](http://www.elysiria.fr/)
 
 
 ## Missing in purpose
@@ -17,4 +17,4 @@ This is a simple git repo for spyesx.fr
 
 ## Grav
 
-The original README of Grav is in [doc/grav/README.md](doc/grav/README.md)
+The original doc of Grav is in [doc/grav/README.md](doc/grav/README.md)
