@@ -1,7 +1,7 @@
 title: 'Nicolas Bages'
 author:
   name: 'Nicolas Bages'
-  email: spyesx@gmail.com
+  email: nicolas.bages@spyesx.fr
 taxonomies:
   - category
   - tag
@@ -14,3 +14,4 @@ summary:
   delimiter: '==='
 blog:
   route: /blog
+footer_note: 'Made with <span class="module__footer__love">♡</span> and some <a href="https://github.com/spyesx/spyesx.fr">tools</a>.'
