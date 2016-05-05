@@ -13,7 +13,7 @@ content:
     items: '@self.children'
     limit: 400
     order:
-        by: date
+        by: folder
         dir: asc
     pagination: true
     url_taxonomy_filters: true

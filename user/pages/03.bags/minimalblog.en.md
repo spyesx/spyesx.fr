@@ -20,4 +20,4 @@ content:
 
 Travelling a lot means to have to pack my bag quite often. I'm usually able to pack in about 30min for an undetermined period. 
 
-In order to speed up this task, I made list of generic bags. It's a also a good way to check if some items are missing.
+In order to speed up this task, I made a list of generic bags. It's also a good way to check if some items are missing.
