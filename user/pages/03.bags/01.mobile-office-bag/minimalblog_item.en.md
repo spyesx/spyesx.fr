@@ -4,13 +4,13 @@ published: true
 process:
     markdown: true
     twig: true
-child_type: default
 routable: true
 cache_enable: true
 visible: true
 summary:
     enabled: '1'
     format: short
+child_type: default
 ---
 
 As a mobile worker my office fits in a backpack.

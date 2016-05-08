@@ -4,13 +4,13 @@ published: true
 process:
     markdown: true
     twig: true
-child_type: default
 routable: true
 cache_enable: true
 visible: true
 summary:
     enabled: '1'
     format: short
+child_type: default
 ---
 
 Mid to long periods
@@ -40,4 +40,4 @@ Mid to long periods
 	* Padlocks + keys
 	* Lighter
 
-> No need to cary a towel, we can buy one anywhere cheap. Avoiding wet items in a bag is always a good idea.
+> No need to carry a towel, we can buy one anywhere cheap. Avoiding wet items in a bag is always a good idea.
