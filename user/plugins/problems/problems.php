@@ -118,6 +118,7 @@ class ProblemsPlugin extends Plugin
         $html = str_replace('%%PROBLEMS%%', $problems, $html);
 
         echo $html;
+        http_response_code(500);
 
         exit();
 
@@ -163,7 +164,16 @@ class ProblemsPlugin extends Plugin
             $backup_folder = ROOT_DIR . 'backup';
             // try to create backup folder if missing
             if (!file_exists($backup_folder)) {
-                mkdir($backup_folder, 0770);
+                @mkdir($backup_folder, 0770);
+            }
+        }
+
+        if (version_compare(GRAV_VERSION, '1.1.4', ">=")) {
+            $essential_files['tmp'] = true;
+            $tmp_folder = ROOT_DIR . 'tmp';
+            // try to create tmp folder if missing
+            if (!file_exists($tmp_folder)) {
+                @mkdir($tmp_folder, 0770);
             }
         }
 
@@ -259,6 +269,17 @@ class ProblemsPlugin extends Plugin
         }
         $this->results['mbstring'] = [$mbstring_status => 'PHP Mbstring (Multibyte String Library) is '. $mbstring_adjective . 'installed'];
 
+        // Check for PHP Zip library
+        if (extension_loaded('zip')) {
+            $zip_adjective = '';
+            $zip_status = 'success';
+        } else {
+            $problems_found = true;
+            $zip_adjective = 'not ';
+            $zip_status = 'error';
+        }
+        $this->results['zip'] = [$zip_status => 'PHP Zip extension is '. $zip_adjective . 'installed'];
+
         // Check for essential files & perms
         $file_problems = [];
         foreach ($essential_files as $file => $check_writable) {
@@ -292,24 +313,6 @@ class ProblemsPlugin extends Plugin
         if (sizeof($file_problems) > 0) {
             $this->results['files'] = $file_problems;
         }
-
-        $compression_status = 'success';
-        $compression_message = 'No compression issues found';
-        // Check for compression
-        if (!function_exists('fastcgi_finish_request')) {
-            //not php-fpm
-            if (extension_loaded('zlib') && $this->grav['config']->get('system.cache.gzip')) {
-                $output_compression = ini_get("zlib.output_compression");
-                if ($output_compression === '1' || $output_compression === 'On') {
-                    $problems_found = true;
-                    $compression_status = 'error';
-                    $compression_message = 'Compression is enabled both in PHP and in Grav, and you\'re not running PHP-FPM. Please turn off the server-side gzip compression (mod_deflate)';
-                }
-            }
-        }
-
-        $this->results['compression'] = [$compression_status => $compression_message];
-
 
         return $problems_found;
     }
