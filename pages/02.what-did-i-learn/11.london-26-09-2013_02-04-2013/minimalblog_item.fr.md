@@ -65,7 +65,7 @@ Je vais me forcer et aussi tenter d'entrainer Jocelyn à faire des conneries ou 
 
 ---
 
-J'aimerais bie voir un peu pour ne plus être seul en soirée. Peut-être que ça aidera au début pour socialier.
+J'aimerais bien boir un peu pour ne plus être seul en soirée. Peut-être que ça aidera au début pour socialier.
 
 ---
 
