@@ -76,4 +76,5 @@ user/themes/material
 
 dploy.yaml
 
-
+*.sublime-project
+*.sublime-workspace

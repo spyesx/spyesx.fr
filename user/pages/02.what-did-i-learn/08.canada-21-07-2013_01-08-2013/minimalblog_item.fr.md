@@ -1,5 +1,5 @@
 ---
-title: 'Canada 21.07.2013 - 01.08.2013'
+title: 'Canada: 21.07.2013 - 01.08.2013'
 summary:
     enabled: '1'
     format: short
